@@ -47,6 +47,11 @@ const info = {
             <p className='mx-b-2'><b>Description: </b>As mongodb is a <span className='secondary-color'><b>NOSQL</b></span> database. Querying it natively was difficult with PowerBI. We tried many solutions and completed ot successfully in record time.</p>
             <p className='mx-b-2'><b>Skills:</b> mongodb, <span className='secondary-color'>mongosqld, ODBC drivers, OS, Cdata connector, research</span></p>
           </p>,
+          <p>
+            <h3 className='mx-b-4'>Security of pharma portal:</h3>
+            <p className='mx-b-2'>We incorporated many industry standards for security of a web app. It included, validation of all requests using AJV, npm packages handling and dependencies correction, Linting for security, environment variables for secrets, .env</p>
+            <p className='mx-b-2'>I set up a framework for validation of body <span className='secondary-color'><b>using ajv and express</b></span></p>
+          </p>
         ] 
       },
       {
