@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Rubik:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Belleza&family=Gilda+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", "Roboto";
+  font-family: "Arapey", "Belleza", "Rubik", "Roboto";
+  font-size: 18px;
+  word-spacing: 3px;
 }
 
 body {
-  background-color: #F7F1E5;
+  background-color: #413543;
+  color: white;
 }
 
 .app-container {
@@ -16,7 +19,7 @@ body {
   display: flex;
   height: 100vh;
   width: 100%;
-  background-color: #F7F1E5;
+  background-color: #413543;
 }
 .app-container .hero {
   position: relative;
@@ -29,7 +32,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.1em;
-  color: #a32cd6;
+  color: #F0EB8D;
 }
 .app-container .hero .navbar {
   display: flex;
@@ -61,7 +64,7 @@ body {
     position: absolute;
     top: 80%;
     left: 50%;
-    font-size: 1.72em;
+    font-size: 1.32em;
   }
   .app-container .hero .navbar {
     display: none;
@@ -94,18 +97,18 @@ body {
   height: 100vh;
   flex-direction: column;
 }
+.app-container .content .about-me {
+  width: 100%;
+}
 .app-container .content .about-me button {
   display: inline-block;
   margin-bottom: 4px;
-  background-color: rgba(163, 44, 214, 0.6666666667);
+  background-color: #8F43EE;
   color: white;
 }
-.app-container .content .about-me .heading {
-  position: relative;
-}
-.app-container .content .about-me .heading .cvbutton {
-  position: absolute;
-  left: 90%;
+.app-container .content .about-me .heading .header {
+  display: flex;
+  justify-content: space-between;
 }
 .app-container .content .skills {
   display: grid;
@@ -124,15 +127,14 @@ body {
   display: flex;
 }
 .app-container .content .content-box {
-  padding: 8px;
-  margin-top: 10px;
+  padding: 14px;
+  margin-top: 28px;
   border-radius: 8px;
+  background-color: #2D2727;
   position: relative;
 }
 .app-container .content .content-box .heading {
-  border-bottom: 1px solid rgba(163, 44, 214, 0.6666666667);
   margin-bottom: 8px;
-  color: #4C4B16;
 }
 .app-container .content .content-box .heading h2 {
   display: inline-block;
@@ -164,10 +166,10 @@ body {
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: #4C4B16;
+  color: #F0EB8D;
 }
 .btn:hover {
-  background-color: rgba(163, 44, 214, 0.6666666667);
+  background-color: #8F43EE;
   color: white;
 }
 
@@ -193,7 +195,7 @@ body {
   width: 65%;
   transition: all ease-in-out 0.4s;
   z-index: 1000;
-  background: #F7F1E5;
+  background: #413543;
   height: 100%;
   overflow: auto;
   margin: 2px;
@@ -206,7 +208,7 @@ body {
   right: 20px;
 }
 .side-modal hr {
-  border-color: #4C4B16;
+  border-color: #F0EB8D;
 }
 @media (max-width: 768px) {
   .side-modal {
@@ -223,23 +225,21 @@ body {
 .skill-bar .bar-level {
   display: block;
   height: 50%;
-  background-color: rgba(163, 44, 214, 0.6666666667);
+  background-color: #8F43EE;
 }
 
 .modal {
-  color: black;
   padding: 25px;
 }
 .modal .modal-header {
   font-weight: 700;
   font-size: 2em;
   margin-bottom: 8px;
-  color: #4C4B16;
+  color: #8F43EE;
 }
 .modal .modal-description {
   margin-bottom: 8px;
   padding-left: 12px;
-  color: #a32cd6;
 }
 .modal .modal-details {
   margin-bottom: 12px;
@@ -250,7 +250,7 @@ body {
   padding: 8px;
 }
 .modal .modal-details .modal-detail-item .modal-detail-header {
-  color: #a32cd6;
+  color: #F0EB8D;
   font-size: 1.5em;
   margin-bottom: 6px;
 }
@@ -287,7 +287,7 @@ body {
   padding: 8px;
   transition: all ease-in-out 0.4s;
   border-radius: 12px;
-  background-color: rgba(163, 44, 214, 0.6666666667);
+  background-color: #8F43EE;
 }
 .project-box h3 {
   display: inline-block;
@@ -335,7 +335,11 @@ body {
 }
 
 .secondary-color {
-  color: #a32cd6;
+  color: #8F43EE;
+}
+
+.header-color {
+  color: #F0EB8D;
 }
 
 .mx-b-10 {

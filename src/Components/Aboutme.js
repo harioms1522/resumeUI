@@ -11,8 +11,10 @@ export default function Aboutme({aboutMe}) {
   return (
     <div className='about-me content-box'>
             <div className='heading'>
-              <h2>About me!</h2>
-              <button className='btn cvbutton' onClick={toggleModal}> C V </button>
+              <div className='header'>
+                <h2>About me!</h2>
+                <button className='btn cvbutton' onClick={toggleModal}> C V </button>
+              </div>
               <ModalBox data={aboutMe} isHidden={hideModal} toggleModal={toggleModal} index=""/>
             </div>
             <p className='about-details'>{aboutMe.description}</p>

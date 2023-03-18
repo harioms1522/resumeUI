@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
-import pic from "./Components/icons/1651338187988.jpeg"
+import pic from "./Components/icons/perfect.png"
 import Aboutme from './Components/Aboutme'
 import Skills from './Components/Skills'
 import nodeIcon from "./Components/icons/nodejs.png"
@@ -28,7 +28,7 @@ const info = {
             performance.
           </p>,
           <p>
-            <h3 className='mx-b-4'>MagentoToVueStore:</h3>
+            <h3 className='mx-b-4 header-color'>MagentoToVueStore:</h3>
             <p className='mx-b-2'>
               <b>Description:</b> This project was used for syncing magento data with our elasticsearch instance. So I chnaged this module such that it uses mongodb instead of magento queries.
             </p>
@@ -37,18 +37,18 @@ const info = {
             </p>
           </p>,
           <p>
-            <h3 className='mx-b-4'>Multer Google Storage Engine:</h3>
+            <h3 className='mx-b-4 header-color'>Multer Google Storage Engine:</h3>
             <p className='mx-b-2'>I built a multer storage engine to by pass some vulnerabilities in a 3rd party library we were using for this. I also added the feature to reduce the size of image while uploading</p>
             <p className='mx-b-2'><b>Skills:</b> node, multer, <span className='secondary-color'>streams, buffer, sharp</span></p>
             <p className='mx-b-2'>I’m also developing an opensource version for it (in development)</p>
           </p>,
           <p>
-            <h3 className='mx-b-4'>Power BI integration with our mongodb instance</h3>
+            <h3 className='mx-b-4 header-color'>Power BI integration with our mongodb instance</h3>
             <p className='mx-b-2'><b>Description: </b>As mongodb is a <span className='secondary-color'><b>NOSQL</b></span> database. Querying it natively was difficult with PowerBI. We tried many solutions and completed ot successfully in record time.</p>
             <p className='mx-b-2'><b>Skills:</b> mongodb, <span className='secondary-color'>mongosqld, ODBC drivers, OS, Cdata connector, research</span></p>
           </p>,
           <p>
-            <h3 className='mx-b-4'>Security of pharma portal:</h3>
+            <h3 className='mx-b-4 header-color'>Security of pharma portal:</h3>
             <p className='mx-b-2'>We incorporated many industry standards for security of a web app. It included, validation of all requests using AJV, npm packages handling and dependencies correction, Linting for security, environment variables for secrets, env</p>
             <p className='mx-b-2'>I set up a framework for validation of body <span className='secondary-color'><b>using ajv and express</b></span></p>
           </p>
@@ -58,18 +58,18 @@ const info = {
         name:"Process Analyst (Ruptok Fintech)",
         points:[
           <p>
-            <h3>CRM and LMS integration using <span className='secondary-color'>Node JS</span></h3>
+            <h3 className='mx-b-4 header-color'>CRM and LMS integration using <span className='secondary-color'>Node JS</span></h3>
             I built <span className='secondary-color'><b>APIs</b></span> to integrate our CRM and LSM so that opportunities could be processed further
           </p>,
           <p>
-            <h3>Process Management:</h3>
+            <h3 className='mx-b-4 header-color'>Process Management:</h3>
             Mapping business requirements and coordinating in developing and implementing processes in line with the pre-set guidelines.
             Undertaking responsibilities of removing unnecessary procedures in processes; ensuring uniformity in the process understanding at the client’s and the organization's end.
             Monitoring the overall functioning of processes, identifying improvement areas, and implementing adequate measures to maximize client satisfaction level.
             Conducting internal process audits & process reviews for ensuring strict adherence to the process parameters/systems as per defined guidelines
           </p>,
           <p>
-            <h3>Data Analysis</h3>
+            <h3 className='mx-b-4 header-color'>Data Analysis</h3>
             I've used the database of our <span className='secondary-color'><b>CRM</b></span> to prepare reports on sales and the efficiency of different teams involved, using <span className='secondary-color'><b>Tableau</b></span> and <span className='secondary-color'><b>MySQL</b></span>.
           </p> ,
           <p>
