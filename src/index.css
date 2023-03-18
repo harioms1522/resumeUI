@@ -100,6 +100,13 @@ body {
   background-color: rgba(163, 44, 214, 0.6666666667);
   color: white;
 }
+.app-container .content .about-me .heading {
+  position: relative;
+}
+.app-container .content .about-me .heading .cvbutton {
+  position: absolute;
+  left: 90%;
+}
 .app-container .content .skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
