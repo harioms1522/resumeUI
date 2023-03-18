@@ -26,13 +26,19 @@ body {
   width: 35%;
   height: 100%;
 }
-.app-container .hero h3 {
+.app-container .hero h3, .app-container .hero p {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.1em;
   color: #F0EB8D;
+  font-weight: 900;
+}
+.app-container .hero p {
+  font-size: medium;
+  top: 75%;
+  font-weight: 600;
 }
 .app-container .hero .navbar {
   display: flex;
@@ -65,6 +71,11 @@ body {
     top: 80%;
     left: 50%;
     font-size: 1.32em;
+    font-weight: 900;
+  }
+  .app-container .hero p {
+    top: 85%;
+    font-weight: 500;
   }
   .app-container .hero .navbar {
     display: none;
@@ -91,7 +102,7 @@ body {
   }
 }
 .app-container .content {
-  padding: 16px;
+  padding: 12px;
   width: 65%;
   display: flex;
   height: 100vh;

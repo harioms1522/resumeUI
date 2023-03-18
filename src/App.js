@@ -210,6 +210,7 @@ export default function App() {
         <Navbar />
         <img src={pic} alt='' className='profile-img'></img>
         <h3>Hariom Sharma</h3>
+        <p>MERN STACK DEVELOPER</p>
       </div>
       <div className='content'> 
           <Aboutme aboutMe={info.about}/>
