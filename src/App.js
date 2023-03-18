@@ -194,77 +194,12 @@ const info = {
         }
       ]
     },
-    {
-      name:"In Office",
-      description: "I have been working on developing the CRM and ERP portals for our company!",
-      details:[
-        {
-          name: "Responsibilities",
-          points:[
-            "Working1",
-            "Working2",
-            "Working3"
-          ]
-        }
-      ]
-    },
-    {
-      name:"In Office",
-      description: "I have been working on developing the CRM and ERP portals for our company!",
-      details:[
-        {
-          name: "Responsibilities",
-          points:[
-            "Working1",
-            "Working2",
-            "Working3"
-          ]
-        }
-      ]
-    },
-    {
-      name:"In Office",
-      description: "I have been working on developing the CRM and ERP portals for our company!",
-      details:[
-        {
-          name: "Responsibilities",
-          points:[
-            "Working1",
-            "Working2",
-            "Working3"
-          ]
-        }
-      ]
-    },
-    {
-      name:"In Office",
-      description: "I have been working on developing the CRM and ERP portals for our company!",
-      details:[
-        {
-          name: "Responsibilities",
-          points:[
-            "Working1",
-            "Working2",
-            "Working3"
-          ]
-        }
-      ]
-    },
-    {
-      name:"In Office",
-      description: "I have been working on developing the CRM and ERP portals for our company!",
-      details:[
-        {
-          name: "Responsibilities",
-          points:[
-            "Working1",
-            "Working2",
-            "Working3"
-          ]
-        }
-      ]
-    }
-  ]
+  ],
+  contacts:{
+    email: "harioms1522@gmail.com",
+    linkedIn: "https://linkedin.com/in/harioms152",
+    github: "https://github.com/harioms1522"
+  }
 }
 
 // state of a json that has all the resume details
@@ -280,7 +215,7 @@ export default function App() {
           <Aboutme aboutMe={info.about}/>
           <Skills skills={info.skills}/>
           <Projects projects={info.projects}/>
-          <Contactme />
+          <Contactme contacts={info.contacts}/>
       </div>
     </div>
   )

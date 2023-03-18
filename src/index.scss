@@ -18,6 +18,8 @@ body{
     background-color: $primary-color;
 }
 
+
+
 .app-container{
     position: relative;
     display: flex;
@@ -343,6 +345,12 @@ body{
     }
 }
 
+.contacts{
+    .header{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
 
 // UTILITIES
 .secondary-color{
