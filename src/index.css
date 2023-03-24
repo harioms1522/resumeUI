@@ -49,7 +49,7 @@ body {
   top: 0;
   left: 0;
   width: 35%;
-  height: 80vh;
+  height: 100vh;
 }
 .app-container .hero h3, .app-container .hero p {
   position: absolute;
