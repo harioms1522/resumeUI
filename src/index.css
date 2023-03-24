@@ -37,9 +37,12 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #413543;
+  padding-left: 35%;
 }
 .app-container .hero {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 35%;
   height: 100%;
 }
@@ -121,7 +124,7 @@ body {
 }
 .app-container .content {
   padding: 12px;
-  width: 65%;
+  width: 100%;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -309,28 +312,43 @@ body {
 
 .project-box {
   cursor: pointer;
-  margin-right: 14px;
-  margin-bottom: 14px;
+  margin: 14px;
+  padding: 16px;
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 2fr 1fr;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
   align-items: center;
   height: 70px;
-  padding: 8px;
   transition: all ease-in-out 0.4s;
+  width: 200px;
+  height: 120px;
   border-radius: 12px;
   background-color: #8F43EE;
+}
+.project-box h3, .project-box p {
+  align-self: center;
+  justify-self: start;
 }
 .project-box h3 {
   display: inline-block;
   width: 100%;
-  text-align: center;
+}
+.project-box p {
+  font-size: 0.7em;
 }
 .project-box:hover {
   color: white;
   border: 2px solid white;
+}
+.project-box .description {
+  justify-content: center;
+  align-items: center;
+}
+.project-box .more {
+  justify-self: center;
 }
 .project-box .demo {
   width: 100%;
