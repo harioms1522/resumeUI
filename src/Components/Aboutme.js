@@ -16,9 +16,9 @@ export default function Aboutme({aboutMe}) {
                 <h2>About me!</h2>
                 <button className='btn cvbutton' onClick={toggleModal}> C V </button>
               </div>
-              <ModalBox data={aboutMe} isHidden={hideModal} toggleModal={toggleModal} index=""/>
+              <ModalBox data={{...aboutMe, description:aboutMe.description.slice(312)}} isHidden={hideModal} toggleModal={toggleModal} index=""/>
             </div>
-            <p className='about-details'><AnimatedText>{aboutMe.description.slice(0,41)}</AnimatedText>{ aboutMe.description.slice(41)}</p>
+            <p className='about-details'><AnimatedText className="secondary-color">{aboutMe.description.slice(0,136)}</AnimatedText>{ aboutMe.description.slice(136,311)}...</p>
     </div>
   )
 }

@@ -13,13 +13,23 @@ import Projects from './Components/Projects'
 import Contactme from './Components/Contactme'
 import performanceMonitor from "./Components/icons/performanceMonitor.png"
 import AnimatedText from './Components/uitilityComponents/AnimatedText'
+import Certificates from './Components/Certificates'
+import advancedReact from "./Components/icons/advancedReact.png"
 
 // this can be made based on server aw well
 const info = {
   name:"Hariom Sharma",
   about:{
     name:"About Me!",
-    description:"I very strictly believe in value of work and try to produce value in my work. I have been gathering experience in backend technologies and understand it very well. I want to work in an organization that allows me to use my skills and be curious about things",
+    description:`Are you looking for an exceptional Web Developer to develop and design cutting-edge, secure, and scalable applications? Look no further!
+
+    With extensive experience in Node.js, MongoDB, JavaScript, Socket, Servers, Linux, and REST APIs, I am confident that I can help take your organization to the next level. My objective is to continuously improve my technical skills, work collaboratively with teams, and use my expertise to develop efficient and innovative systems.
+
+    I am also good with front end technologies like react, html, css, and Redux.
+    
+    I am passionate about delivering quality work, and my proficiency in Linux, socket servers, and REST APIs enables me to design and develop secure and robust applications that meet the most demanding standards. I am eager to work with a dynamic organization and contribute to its growth and success.
+    
+    If you are seeking a Web Developer who can deliver excellent results while continuously pushing the boundaries of what's possible, let's connect and discuss how we can work together.`,
     details:[
       {
         name:"Backend Developer (Tablt Pharmacy)",
@@ -196,6 +206,24 @@ const info = {
       ]
     },
   ],
+  certificates:[
+    {
+      name:"Meta Advanced React (Coursera)",
+      description: "I examined different types of React components and learned various characteristics and when to use them. And dig into more advanced hooks and custom hooks. I looked into building forms with React used formik. I explored component composition and new patterns, such as Higher Order Components and Render Props.",
+      link:"http://google.com",
+      image: advancedReact,
+      details:[
+        {
+          name:"What was it about?",
+          points:[
+            "Create robust and reusable components with advanced techniques and learn different patterns to reuse common behavior",
+            "Integrate commonly used React libraries to streamline your application development",
+            "Seamlessly test React applications with React Testing Library",
+          ]
+        }
+      ]
+    }
+  ],
   contacts:{
     email: "harioms1522@gmail.com",
     linkedIn: "https://linkedin.com/in/harioms152",
@@ -221,6 +249,7 @@ export default function App() {
           <Aboutme aboutMe={info.about}/>
           <Skills skills={info.skills}/>
           <Projects projects={info.projects}/>
+          <Certificates certificates={info.certificates}/>
           <Contactme contacts={info.contacts}/>
       </div>
     </div>

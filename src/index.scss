@@ -340,7 +340,6 @@ body{
 .projects{
     display: flex;
     flex-wrap: wrap;
-    padding: 6px;
 }
 
 .project-box{
@@ -373,7 +372,6 @@ body{
     }
     &:hover{
         color:white;
-        border: 2px solid white;
     }
     .description{        
         // grid-column: 1 / span 3;
@@ -416,6 +414,7 @@ body{
         flex-direction: row;
         align-items: center;;
         font-size: 0.8em;
+        padding: 14px;
     }
 }
 
@@ -423,6 +422,30 @@ body{
     .header{
         font-size: 24px;
         margin-bottom: 20px;
+    }
+}
+
+.certificates{
+    margin: 16px;
+    .certCard{
+        // padding: 16px;
+        // margin: 14;
+        background-color: $important-color;
+        width: 200px;
+        padding: 14px;
+        border-radius: 12px;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        font-size: 1em;
+        gap: 6px;
+        .body{
+            grid-column: 1 / span 3;
+            font-size: 0.7em;
+        }
+
+        @media (max-width:768px){
+            width: 100%;
+        }
     }
 }
 
