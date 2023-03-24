@@ -14,6 +14,23 @@ body {
   color: white;
 }
 
+@keyframes move-text {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animated-text {
+  font-size: inherit;
+}
+.animated-text span {
+  opacity: 0;
+  animation: move-text 0.4s forwards;
+  font-size: inherit;
+}
+
 .app-container {
   position: relative;
   display: flex;
@@ -31,7 +48,7 @@ body {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2.1em;
+  font-size: 1.8em;
   color: #F0EB8D;
   font-weight: 900;
 }
@@ -75,7 +92,8 @@ body {
   }
   .app-container .hero p {
     top: 85%;
-    font-weight: 500;
+    font-weight: 800;
+    font-size: 0.8em;
   }
   .app-container .hero .navbar {
     display: none;
@@ -109,6 +127,7 @@ body {
   flex-direction: column;
 }
 .app-container .content .about-me {
+  margin-top: 0 !important;
   width: 100%;
 }
 .app-container .content .about-me button {
@@ -150,6 +169,7 @@ body {
 .app-container .content .content-box .heading h2 {
   display: inline-block;
   margin: 0;
+  font-size: 1.4em;
 }
 .app-container .content .content-box .heading button {
   display: inline-block;
@@ -158,6 +178,9 @@ body {
 @media (max-width: 768px) {
   .app-container .content {
     width: 100%;
+  }
+  .app-container .content .content-box {
+    margin-top: 10px;
   }
 }
 @media (max-width: 768px) {

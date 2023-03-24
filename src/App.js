@@ -12,6 +12,7 @@ import dockerIcon from "./Components/icons/docker.png"
 import Projects from './Components/Projects'
 import Contactme from './Components/Contactme'
 import performanceMonitor from "./Components/icons/performanceMonitor.png"
+import AnimatedText from './Components/uitilityComponents/AnimatedText'
 
 // this can be made based on server aw well
 const info = {
@@ -209,8 +210,12 @@ export default function App() {
       <div className='hero'>
         <Navbar />
         <img src={pic} alt='' className='profile-img'></img>
-        <h3>Hariom Sharma</h3>
-        <p>MERN STACK DEVELOPER</p>
+        <h3>
+          Hariom Sharma
+        </h3>
+        <p>
+          <AnimatedText>MERN STACK DEVELOPER</AnimatedText>
+        </p>
       </div>
       <div className='content'> 
           <Aboutme aboutMe={info.about}/>
