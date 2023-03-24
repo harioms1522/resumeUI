@@ -39,12 +39,17 @@ body {
   background-color: #413543;
   padding-left: 35%;
 }
+@media (max-width: 768px) {
+  .app-container {
+    padding-left: 0%;
+  }
+}
 .app-container .hero {
   position: fixed;
   top: 0;
   left: 0;
   width: 35%;
-  height: 100%;
+  height: 80vh;
 }
 .app-container .hero h3, .app-container .hero p {
   position: absolute;
@@ -85,6 +90,7 @@ body {
   .app-container .hero {
     width: 100%;
     height: 80vh;
+    position: relative;
   }
   .app-container .hero h3 {
     position: absolute;
