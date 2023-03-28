@@ -167,10 +167,11 @@ body {
 }
 .app-container .content .content-box {
   padding: 14px;
-  margin-top: 28px;
+  margin-top: 14px;
   border-radius: 8px;
   background-color: #2D2727;
   position: relative;
+  transition: all 0.4s ease-in-out;
 }
 .app-container .content .content-box .heading {
   margin-bottom: 8px;
@@ -179,10 +180,14 @@ body {
   display: inline-block;
   margin: 0;
   font-size: 1.4em;
+  color: #F0EB8D;
 }
 .app-container .content .content-box .heading button {
   display: inline-block;
   margin-left: 20px;
+}
+.app-container .content .content-box:hover {
+  box-shadow: -3px 5px 19px 0px rgb(143, 67, 238);
 }
 @media (max-width: 768px) {
   .app-container .content {
@@ -301,6 +306,20 @@ body {
   margin-left: 12px;
   margin-bottom: 12px;
 }
+@media (max-width: 768px) {
+  .modal {
+    padding: 10px;
+  }
+  .modal .modal-header {
+    font-size: 24px;
+  }
+  .modal .modal-description {
+    font-size: 12px;
+  }
+  .modal .modal-details .modal-detail-item .modal-detail-header {
+    font-size: 21px;
+  }
+}
 .modal .modal-icon {
   display: block;
   width: 50px;
@@ -316,7 +335,6 @@ body {
 }
 
 .project-box {
-  cursor: pointer;
   margin: 14px;
   padding: 16px;
   position: relative;
@@ -344,15 +362,13 @@ body {
 .project-box p {
   font-size: 0.7em;
 }
-.project-box:hover {
-  color: white;
-}
 .project-box .description {
   justify-content: center;
   align-items: center;
 }
 .project-box .more {
   justify-self: center;
+  cursor: pointer;
 }
 .project-box .demo {
   width: 100%;

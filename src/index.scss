@@ -188,21 +188,28 @@ body{
 
         .content-box{
             padding: 14px;
-            margin-top: 28px;
+            margin-top: 14px;
             border-radius: 8px;
             background-color: $secondary-back;
             position: relative;
+            transition: all 0.4s ease-in-out;
             .heading{
                 margin-bottom: 8px;
                 h2{
                     display: inline-block;
                     margin: 0;
                     font-size: 1.4em;
+                    color: $header-color;
                 }
                 button{
                     display: inline-block;
                     margin-left: 20px;
                 }
+            }
+            &:hover{
+                -webkit-box-shadow: -3px 5px 19px 0px rgba(143,67,238,1);
+                -moz-box-shadow: -3px 5px 19px 0px rgba(143,67,238,1);
+                box-shadow: -3px 5px 19px 0px rgba(143,67,238,1);
             }
         }
 
@@ -326,6 +333,23 @@ body{
         }
     }
 
+    @media (max-width:768px) {
+        padding: 10px;
+        .modal-header{
+            font-size: 24px;
+        }
+        .modal-description{
+            font-size: 12px;
+        }
+        .modal-details{
+            .modal-detail-item{
+                .modal-detail-header{
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+
     .modal-icon{
         display: block;
         width: 50px;
@@ -343,7 +367,7 @@ body{
 }
 
 .project-box{
-    cursor: pointer;
+    // cursor: pointer;
     // margin-right: 14px;
     // margin-bottom: 14px;
     margin: 14px;
@@ -370,9 +394,9 @@ body{
     p{
         font-size: 0.7em;
     }
-    &:hover{
-        color:white;
-    }
+    // &:hover{
+    //     color:white;
+    // }
     .description{        
         // grid-column: 1 / span 3;
         justify-content: center;
@@ -380,7 +404,7 @@ body{
     }
     .more{
         justify-self: center;
-
+        cursor: pointer;
     }
     .demo{
         width: 100%;

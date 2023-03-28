@@ -101,13 +101,13 @@ const info = {
     {
       name:"Nodejs",
       level:.9,
-      description:"A javascript runtime to use JS as a scriptig languages to run js outside browser!",
+      description:"A javascript runtime to use JS as a scriptig languages to run js outside browser! I have an experience of around 19 months in node. I have built a deep knowledgebase of the related technologies as well eg. express and mongodb",
       icon:nodeIcon,
       details:[
         {
           name:"Experience",
           points:[
-            "one",
+            "",
             "two",
             "three"
           ] 
@@ -124,22 +124,16 @@ const info = {
     },
     {
       name:"Express",
-      level:1,
+      level:.9,
       description:"A nodejs framwork to easily implement servers and routing! And much more thanks to its middleware structure for req response cycle",
       icon: expressIcon
 
     },
     {
       name:"MongoDB",
-      level:1,
+      level:.8,
       description:"A document based NOSQL database. That provides fast transactional queries and the documents are easily refered as the JS objects",
       icon: mongoIcon
-    },
-    {
-      name:"Redis",
-      level:.7,
-      description:"A in-memory database that can be easily used for the caching purposed and other modules like redis-search are also provided",
-      icon: redisIcon
     },
     {
       name:"React",
@@ -152,6 +146,12 @@ const info = {
       level:.8,
       description:"Its a container based technology that provides infrastructure of the app as code. Complex arctictures of Apps can be easily setup using docker containers and associated technologies",
       icon:dockerIcon
+    },
+    {
+      name:"Redis",
+      level:.7,
+      description:"A in-memory database that can be easily used for the caching purposed and other modules like redis-search are also provided",
+      icon: redisIcon
     },
     // "CSS":8, 
     // "HTML":8, 
@@ -242,7 +242,7 @@ export default function App() {
           Hariom Sharma
         </h3>
         <p>
-          <AnimatedText>MERN STACK DEVELOPER</AnimatedText>
+          <AnimatedText speed="10">MERN STACK DEVELOPER</AnimatedText>
         </p>
       </div>
       <div className='content'> 

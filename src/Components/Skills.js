@@ -18,7 +18,7 @@ export default function Skills({skills}) {
                 {/* will create a bar here */}
                 <Skillbar level={skill.level} />
                 <ModalBox data={skill} index={index} toggleModal={toggleModal} isHidden={showSkillModalIndex===index ? false : true} />
-                <button className='btn' onClick={()=>{toggleModal(index)}}>More...</button>
+                {/* <button className='btn' onClick={()=>{toggleModal(index)}}>More...</button> */}
             </div>
         })
 

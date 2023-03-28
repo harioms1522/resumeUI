@@ -18,7 +18,7 @@ export default function Aboutme({aboutMe}) {
               </div>
               <ModalBox data={{...aboutMe, description:aboutMe.description.slice(312)}} isHidden={hideModal} toggleModal={toggleModal} index=""/>
             </div>
-            <p className='about-details'><AnimatedText className="secondary-color">{aboutMe.description.slice(0,136)}</AnimatedText>{ aboutMe.description.slice(136,311)}...</p>
+            <p className='about-details'><AnimatedText speed="50" className="secondary-color">{aboutMe.description.slice(0,311) + '...'}</AnimatedText></p>
     </div>
   )
 }

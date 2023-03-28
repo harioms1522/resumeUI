@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaAtom} from "react-icons/fa"
+import {FaTimes} from "react-icons/fa"
 
 export default function ModalBox({isHidden, data, toggleModal, index}) {
 
@@ -42,7 +42,7 @@ export default function ModalBox({isHidden, data, toggleModal, index}) {
     return (
         <div className={`side-modal ${isHidden ? "hidden-modal" : "" }  modal`} >   
             {data.icon ? <img src={data.icon ? data.icon : "" } className="modal-icon" alt=""/> : ""}
-            <FaAtom className="fas fa-check-circle close-modal" onClick={()=>{toggleModal(index)}} />
+            <FaTimes className="close-modal" onClick={()=>{toggleModal(index)}} />
             <h1 className='modal-header'>{data.name}</h1>
             <p className='modal-description'>{data.description}</p>
             <hr></hr>

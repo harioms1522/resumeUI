@@ -2,21 +2,6 @@ import React, {useState} from 'react'
 import {FaArrowRight} from "react-icons/fa"
 import ModalBox from './ModalBox'
 
-// const CardCert = function({description, name, cert}){
-//     return (
-//         <div className='certCard'>
-//             <div className='header'>{name}</div>
-//             <div className='actions'>
-//                 <FaArrowRight />
-//             </div>
-//             <div className='body'>
-//                 {description.slice(0,40)} ...
-//             </div>
-//             <ModalBox data={cert} index={name} toggleModal={toggleModal} isHidden={showProjectModalIndex===index ? false : true}/>
-//         </div>
-//     )
-// }
-
 export default function Certificates({certificates}) {
 
     const [showProjectModalIndex, setShowProjectModalIndex] = useState(-1);
