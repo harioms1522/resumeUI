@@ -424,6 +424,9 @@ body {
   grid-column: 1/span 3;
   font-size: 0.7em;
 }
+.certificates .certCard .actions {
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   .certificates .certCard {
     width: 100%;
